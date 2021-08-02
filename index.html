@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FEMC - Countries Api</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+  
+    <!-- Navigation -->
+    <div class="nav-container">
+      <div class="nav-items-container">
+        <h3 class="nav-title">Where in the world?</h3>
+        <div class="theme-container">
+          <i class="far fa-moon"></i>
+          <h5 class="theme-text">Dark Mode</h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- Search and filter -->
+    <div class="search-region-container">
+      <div class="search-box">
+        <i class="fas fa-search"></i>
+        <input id="search" type="search" placeholder="Search for a country...">
+      </div>
+      <div class="region-container">
+        <div class="filter-region">
+          <p class="filter-text">Filter by Region</p>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="regions">
+          <p>Africa</p>
+          <p>America</p>
+          <p>Asia</p>
+          <p>Europe</p>
+          <p>Oceania</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Country Cards -->
+    <div class="countries-container"></div>
+    
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+@import "./styling/variables.css";
+@import "./styling/card.css";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--light-mode-background);
+  font-family: "Nunito Sans", sans-serif;
+  overflow-x: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navigation */
+.nav-container {
+  width: 100%;
+  box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.05);
+}
+
+.nav-items-container {
+  width: 81%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.theme-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.far {
+  font-size: 14px;
+  margin-right: 10px;
+  transform: rotate(-18deg);
+}
+
+/* search and filter */
+.search-region-container {
+  width: 81%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.search-box {
+  background: var(--light-mode-card);
+  width: 30vw;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  padding: 5px 20px;
+}
+
+.fa-search {
+  margin-right: 10px;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.search-box > input {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.search-box > input:focus {
+  outline: none;
+}
+
+.region-container {
+  background: var(--light-mode-card);
+  width: 11vw;
+  height: 45px;
+  box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  padding: 5px 0px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.filter-region {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  margin-bottom: 2px;
+}
+
+.regions {
+  visibility: hidden;
+  z-index: 10;
+}
+
+.region-container:hover .regions {
+  visibility: visible;
+}
+
+.fa-chevron-down {
+  font-size: 10px;
+}
+
+.regions {
+  background: var(--light-mode-card);
+  width: 11vw;
+  height: auto;
+  box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  padding: 5px 20px;
+  font-size: 14px;
+}
+
+.regions > p {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
